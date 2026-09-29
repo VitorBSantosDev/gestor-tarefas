@@ -1,1 +1,19 @@
-[{ "id": 1, "titulo": "Estudar closures", "prioridade": "alta", "status": "pendente" }]
+[
+    {
+    "titulo": "Estudar closures", 
+    "prioridade": "alta", 
+    "status": "pendente", 
+    "dataCriacao": "2026-09-29" },
+
+    {
+    "titulo": "Testar campos", 
+    "prioridade": "media", 
+    "status": "em-curso", 
+    "dataCriacao": "2026-09-29" },
+
+    {
+    "titulo": "Testar campos 2", 
+    "prioridade": "baixa", 
+    "status": "concluida", 
+    "dataCriacao": "2026-09-29" }
+]
