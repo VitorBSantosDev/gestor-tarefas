@@ -1,5 +1,5 @@
 import { iniciarTema } from "./tema.js";
-import { criarGestor } from "./estado.js";
+import { criarGestor } from "./tarefas.js";
 import { validarTitulo } from "./validadores.js";
 
 function atualizarProgresso(tarefas) {
