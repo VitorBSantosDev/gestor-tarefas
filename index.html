@@ -25,10 +25,78 @@
         </div>
     </header>
     <main>
+        <div class="main-container" id="main-container">
+            <form id="adicionar-tarefa">
+                <input type="text" id="titulo-tarefa" placeholder="Nova tarefa">
+                <select id="prioridade-tarefa">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <button id="btn-adicionar-tarefa">Adicionar</button>
+            </form>
+            <form id="filtrar-tarefa">
+                <input type="text" id="filtro-titulo-tarefa" placeholder="Pesquisar tarefas">
+                <select id="prioridade-tarefa">
+                    <option value="baixa">Baixa</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                    <option value="tudo">Todas as prioridades</option>
+                </select>
+            </form>
+            <div class="container-lista-tarefas">
+                <ul class="lista-tarefas">
+                    <div class="header-lista-tarefas">
+                        <h4>Pendente</h4>
+                        <span id="tarefas-pendentes">0</span>
+                    </div>
+                    <li>
+                        <p>Teste</p>
+                        <div class="tarefa-acoes">
+                            <span class="prioridade">Média</span>
+                            <button class="btn-mudar-status">✓</button>
+                            <button class="btn-remover-tarefa">Remover</button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="lista-tarefas">
+                    <div class="header-lista-tarefas">
+                        <h4>Em curso</h4>
+                        <span id="tarefas-em-curso">0</span>
+                    </div>
+                    <li>
+                        <p>Teste</p>
+                        <div class="tarefa-acoes">
+                            <span class="prioridade">Média</span>
+                            <button class="btn-mudar-status">✓</button>
+                            <button class="btn-remover-tarefa">Remover</button>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="lista-tarefas">
+                    <div class="header-lista-tarefas">
+                        <h4>Concluida</h4>
+                        <span id="tarefas-concluidas">0</span>
+                    </div>
+                    <li>
+                        <p>Teste</p>
+                        <div class="tarefa-acoes">
+                            <span class="prioridade">Média</span>
+                            <button class="btn-mudar-status">✓</button>
+                            <button class="btn-remover-tarefa">Remover</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>   
+        </div>
 
     </main>
     <footer>
-
+        <div class="footer-left">
+            <strong class="footer-nome">Vitor Santos&nbsp;&nbsp;</strong>
+            <span class="footer-trademark">© 2026 • ServiceNow Trainee Portfolio</span>
+        </div>
+        <a href="#main-container" class="footer-topo-pagina">Início ↑</a>
     </footer>
 
 </body>
