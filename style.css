@@ -92,3 +92,46 @@ header h1 {
     border-radius: 8px;
     cursor: pointer;
 }
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-lista-tarefas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-lista-tarefas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-tarefas {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+  background-color: var(--color-border);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 1.75rem 2.5rem;
+  box-sizing: border-box;
+  color: var(--texto);
+}
+
+.footer-topo-pagina {
+  color: var(--texto); 
+  font-weight: 600;
+  text-decoration: none;
+}
