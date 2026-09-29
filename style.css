@@ -93,17 +93,68 @@ header h1 {
     cursor: pointer;
 }
 
+main {
+    width: 100%;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
+}
+
+#adicionar-tarefa {
+    display: grid;
+    grid-template-columns: 1fr 180px auto;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+#adicionar-tarefa input,
+#adicionar-tarefa select,
+#adicionar-tarefa button {
+    padding: 12px 16px;
+    font-size: 1rem;
+    color: var(--texto);
+    background: var(--superficie);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+}
+
+#adicionar-tarefa input:focus,
+#adicionar-tarefa select:focus,
+#adicionar-tarefa button:hover {
+    outline: none;
+    border-color: var(--color-progress-bar);
+}
+
+#adicionar-tarefa button {
+    cursor: pointer;
+}
+
+.erro-formulario {
+    grid-column: 1 / 4;
+    margin: 0;
+    color: red;
+    font-size: 0.9rem;
+}
+
+.leitor-ecra {
+    position: absolute; width: 1px; height: 1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap;
 }
 
 .container-lista-tarefas{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
+    align-items: center;
+}
+
+.coluna-tarefas{
+    display: flex;
+    flex-direction: column;
 }
 
 .header-lista-tarefas{
@@ -116,6 +167,9 @@ header h1 {
 .lista-tarefas {
     display: flex;
     flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer {
@@ -134,4 +188,13 @@ footer {
   color: var(--texto); 
   font-weight: 600;
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    #adicionar-tarefa {
+        grid-template-columns: 1fr;
+    }
+    .erro-formulario {
+        grid-column: 1;
+    }
 }
