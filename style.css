@@ -1,0 +1,59 @@
+:root {
+    --color-progress-bar: #DAA520;
+}
+
+html {
+    background-color: black;
+}
+
+header{
+  background: #f5f5f3;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.header-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.progresso-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #6b6b6b;
+  margin-bottom: 6px;
+}
+
+#legenda-progresso {
+    font-size: 1rem;
+}
+
+#texto-progresso {
+    font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+}
+
+.barra-progresso {
+  height: 8px;
+  background: #e2e2de;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.barra-progresso-preenchimento {
+  height: 100%;
+  width: 0%;
+  background: var(--color-progress-bar);
+  transition: width 0.25s;
+}
